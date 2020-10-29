@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Merriweather', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.705);
+}
+
+img {
+  object-fit: contain;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #202020;
+}
+
+p {
+  opacity: 0.8;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  letter-spacing: 2px;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  padding: 0.7rem 0.8rem;
+  padding-right: 5rem;
+  /* background: #000; */
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.navbar__link-item {
+  margin-left: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar__list-item-link:hover {
+  color: #000;
+  transition: all 300ms ease;
+}
+
+.navbar__logo {
+  width: 45px;
+  height: 45px;
+}
+
+/* Main-content */
+
+.container {
+  margin: 2rem 3rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.hero__info {
+  flex: 50%;
+  padding: 3rem;
+  margin: 0 0 0 3rem;
+}
+
+.btn-container {
+  margin: 1rem;
+}
+
+.btn {
+  border: none;
+  background: #202020;
+  font-size: 1.2rem;
+  color: white;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  color: #202020;
+  background: rgb(235, 228, 228);
+}
+
+.hero__video {
+  flex: 10%;
+  margin-right: 6rem;
+}
+
+.hero__video-item {
+  width: 100%;
+  min-width: 400px;
+  height: auto;
+}
+
+/* Second hero */
+
+.second__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.second__hero-image {
+  width: 50%;
+  min-width: 350px;
+  height: auto;
+}
+
+.second__hero-info {
+  flex: 50%;
+  padding: 3rem;
+  margin: 0 0 0 3rem;
+}
+
+/* Illustrations */
+
+.illustration {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.illustration__info {
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.illustration__info h1 {
+  position: relative;
+  font-weight: 600;
+  min-width: 70px;
+}
+
+.illustration__cards {
+  margin: 3rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.illustration__card {
+  width: 20%;
+  height: auto;
+  min-width: 220px;
+  border: 1px solid rgba(204, 204, 204, 0.404);
+  margin: 2rem;
+  border-radius: 5px;
+  padding-bottom: 0.6rem;
+  transition: box-shadow 500ms ease;
+}
+
+.illustration__card:hover {
+  box-shadow: 20px 26px 40px -5px rgba(0, 0, 0, 0.33);
+}
+
+.illustration__card-image-container img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.illustration__card-info {
+  text-align: center;
+}
+
+.illustration__card-info p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0.4rem;
+  opacity: 0.5;
+}
+
+/* Slider */
+
+.slider h1 {
+  text-align: center;
+}
+
+.slider__info {
+  min-width: 200px;
+}
+
+.slider__gallery {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__gallery-img-container {
+  text-align: center;
+  margin: 2rem;
+  display: none;
+}
+
+.slider__gallyery-img {
+  max-width: 70%;
+  min-width: 150px;
+  object-fit: contain;
+}
+
+.slider__gallery-controls {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__gallery-control {
+  font-size: 0.012rem;
+  background: #202020;
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+  transition: transform 150ms ease;
+}
+
+.slider__gallery-control:hover {
+  transform: scale(1.3);
+}
+
+.selected {
+  background: #202020;
+  opacity: 1;
+}
+
+.visible {
+  display: block;
+}
