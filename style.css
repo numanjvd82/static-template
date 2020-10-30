@@ -288,8 +288,6 @@ p {
 }
 
 .illustration__cards {
-  margin: 3rem;
-  padding: 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -324,6 +322,18 @@ p {
   font-size: 0.9rem;
   margin: 0.5rem 0.4rem;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 921px) {
+  .illustration__cards {
+    margin: 0;
+    padding: 0;
+  }
+
+  .illustration__card {
+    width: 50%;
+    min-width: 300px;
+  }
 }
 
 /* Slider */
@@ -384,6 +394,17 @@ p {
   transform: scale(1.3);
 }
 
+@media screen and (max-width: 600px) {
+  .slider__info p {
+    text-align: center;
+  }
+
+  .slider__gallyery-img {
+    max-width: 100%;
+    min-width: 200px;
+  }
+}
+
 /* animation for carousel slides */
 
 @keyframes fade-in {
@@ -399,3 +420,31 @@ p {
 }
 
 /* Global media querie for hiding animation and transitions on small screen */
+
+@media screen and (max-width: 600px) {
+  .btn {
+    transition: none;
+  }
+
+  .btn:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .illustration__card {
+    transition: none;
+  }
+
+  .illustration__card:hover {
+    box-shadow: none;
+  }
+
+  .slider__gallery-control {
+    font-size: 0.7rem;
+    transition: none;
+  }
+
+  .slider__gallery-control:hover {
+    transform: none;
+  }
+}
