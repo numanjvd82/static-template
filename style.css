@@ -40,6 +40,33 @@ p {
   letter-spacing: 2px;
 }
 
+@media screen and (max-width: 460px) {
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-right: 0;
+  }
+
+  .navbar__list {
+    display: block;
+  }
+
+  .navbar__links {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .navbar__link-item {
+    margin: 1rem 0 0 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
 /* Navbar */
 
 .navbar {
@@ -94,6 +121,13 @@ p {
   margin: 2rem auto;
 }
 
+@media screen and (max-width: 921px) {
+  .hero {
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
 .hero__info {
   flex: 50%;
   padding: 3rem;
@@ -137,6 +171,54 @@ p {
   height: auto;
 }
 
+@media screen and (max-width: 460px) {
+  .container {
+    margin: 0;
+  }
+
+  .hero__video-item {
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+  }
+
+  .hero__video {
+    flex: 10%;
+    margin-right: 0;
+  }
+
+  .hero__info {
+    flex: 50%;
+    padding: 0;
+    margin: 0 0 0 1rem;
+  }
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-right: 0;
+  }
+
+  .navbar__list {
+    display: block;
+  }
+
+  .navbar__links {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .navbar__link-item {
+    margin: 1rem 0 0 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
 /* Second hero */
 
 .second__hero {
@@ -157,6 +239,33 @@ p {
   flex: 50%;
   padding: 3rem;
   margin: 0 0 0 3rem;
+}
+
+@media screen and (max-width: 921px) {
+  .second__hero {
+    display: block;
+    margin: 5rem 2rem;
+    padding: 2rem;
+  }
+
+  .second__hero-image-container {
+    text-align: center;
+  }
+
+  .second__hero-image {
+    width: 100%;
+    min-width: 280px;
+    height: auto;
+  }
+
+  .second__hero-info {
+    padding: 0;
+    margin: 3rem 0;
+  }
+
+  .second__hero-info h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Illustrations */
@@ -288,3 +397,5 @@ p {
     transform: translateX(0px);
   }
 }
+
+/* Global media querie for hiding animation and transitions on small screen */
