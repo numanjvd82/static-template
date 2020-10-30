@@ -56,3 +56,5 @@ prevButton.addEventListener('click', () => {
   }
   updateSlidePosition();
 });
+
+// Smooth scrolling with js
