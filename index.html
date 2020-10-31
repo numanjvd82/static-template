@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Absurd Design</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <!-- Navbar -->
@@ -38,18 +40,7 @@
     <!-- Main-content -->
     <div class="container">
       <div class="hero">
-        <div class="hero__info">
-          <h1>absurd illustrations that make sense</h1>
-          <p>
-            What about absurd illustrations for your projects? Take every user
-            on an individual journey through their own imagination.
-            <div class="btn-container">
-              <button class="btn btn-primary">Download</button>
-              <button class="btn btn-secondary">Subscribe</button>
-            </div>
-          </p>
-        </div>
-        <div class="hero__video">
+        <div class="hero__video animated-left">
           <video
             class="hero__video-item"
             autoplay=""
@@ -63,14 +54,25 @@
             />
           </video>
         </div>
+        <div class="hero__info">
+          <h1>absurd illustrations that make sense</h1>
+          <p>
+            What about absurd illustrations for your projects? Take every user
+            on an individual journey through their own imagination.
+            <div class="btn-container">
+              <button class="btn btn-primary">Download</button>
+              <button class="btn btn-secondary">Subscribe</button>
+            </div>
+          </p>
+        </div>
       </div>
 
       <!-- Second image right below the hero -->
       <div class="second__hero">
-        <div class="second__hero-image-container">
+        <div class="second__hero-image-container" data-aos="fade-in" data-aos-duration="1225" data-aos-easing="ease">
           <img src="./story.jpg" class="second__hero-image" alt="">
         </div>
-        <div class="second__hero-info">
+        <div class="second__hero-info" data-aos="slide-left" data-aos-duration="1225" data-aos-easing="ease">
           <h1>real beauty resides in imperfection</h1>
           <p>
             In a digital era, we sometimes feel the need to interact with something more human that will make us appreciate both the beauty and the imperfection of something made by hand.
@@ -217,7 +219,12 @@
     </div>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000
+      });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>

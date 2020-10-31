@@ -122,12 +122,14 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem auto;
+  padding: 3rem 0 6rem 0;
+  margin: 3rem auto 6rem auto;
 }
 
 @media screen and (max-width: 921px) {
   .hero {
     display: block;
+    padding: 3rem 0 6rem 0;
     margin: 2rem auto;
   }
 }
@@ -136,6 +138,10 @@ p {
   flex: 50%;
   padding: 3rem;
   margin: 0 0 0 3rem;
+}
+
+.animated-left {
+  animation: fade-in 1.25s ease;
 }
 
 .btn-container {
@@ -229,8 +235,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem;
-  padding: 2rem;
+  padding: 3rem 2rem 6rem 2rem;
+  margin: 3rem 2rem 6rem 2rem;
 }
 
 .second__hero-image {
@@ -243,6 +249,22 @@ p {
   flex: 50%;
   padding: 3rem;
   margin: 0 0 0 3rem;
+}
+
+.animated-right {
+  animation: fade-in-left 1.25s ease-out;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(600px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 @media screen and (max-width: 921px) {
@@ -275,8 +297,8 @@ p {
 /* Illustrations */
 
 .illustration {
-  margin: 1rem;
-  padding: 1rem;
+  padding: 3rem 1rem 6rem 1rem;
+  margin: 3rem 1rem 6rem 1rem;
 }
 
 .illustration__info {
@@ -374,7 +396,7 @@ p {
 }
 
 .slider__gallery-controls {
-  margin: 1rem;
+  margin: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
